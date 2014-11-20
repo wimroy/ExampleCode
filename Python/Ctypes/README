@@ -1,0 +1,15 @@
+# Example taken from: http://stackoverflow.com/a/5082294
+
+Compile as:
+$ gcc -shared -fPIC -o testlib.so testlib.c
+or
+$ g++ -shared -fPIC -o testlib.so testlib.c
+
+Run as:
+$ python testlibwrapper.py
+
+
+If using the C++ compiler, avoid name mangling using `extern "C"`. 
+
+Q: But how can overloaded functions be used then? 
+A: They can't
